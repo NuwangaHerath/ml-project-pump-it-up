@@ -86,7 +86,7 @@ I plotted the box plots for numerical features and there were some significant o
 
 * ``population`` - 21381 (Population around a pump cannot be 0 for such large number.)
 * ``gps_height`` - 20438 (This cannot be happen as the gps_height of that area not nearly be 0.)
-* ``longitude`` - 1812 (This cannot be happen as longitude of that are lies between 33 - 39 approx.)
+* ``longitude`` - 1812 (This cannot be happen as longitude of that area lies between 33 - 39 approx.)
 * ``amount_tsh`` - 41639 (Static head of a pump cannot be 0 for such large number.)
 
 To impute those ``0`` values, I used several combinations of grouping techniques and imputaion techniques(eg: mean,mode, median)
