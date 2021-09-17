@@ -105,6 +105,7 @@ There were null values only in categorical feature columns.
 
 ### Step 7 - Encoding Categorical Features
 
+Label encode copy of target labels to perform target encoding.
 Used **Target Encoding** to encode the categorical features.
 
 ### Step 8 - Scaling the Data
