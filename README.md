@@ -2,7 +2,7 @@
 Github repo link - https://github.com/NuwangaHerath/ml-project-pump-it-up
 
 ## Problem Description
-The data for this comeptition comes from the Taarifa waterpoints dashboard, which aggregates data from the Tanzania Ministry of Water.
+The data for this competition comes from the Taarifa waterpoints dashboard, which aggregates data from the Tanzania Ministry of Water.
 
 The task is to predict the operating condition of a waterpoint for each record in the dataset. We are provided the following set of information about the waterpoints: 
 
@@ -60,7 +60,7 @@ For the numerical features, I plotted distplots to get insight about the data an
 
 ### Decisions after exploring the data manually
 **High categorical cardinality**
-*   ``date_recorded`` will be seperated into three featutes, ``year_recorded``, ``month_recorded``, ``day_recorded``.
+*   ``date_recorded`` will be extract into three featutes, ``year_recorded``, ``month_recorded``, ``day_recorded``.
 *   ``wpt_name`` and ``subvillage`` will be removed from input dataset as the higher categorical cardinality. Cannot expect info gain from those features.
 
 **Duplicate features**
@@ -89,7 +89,7 @@ I plotted the box plots for numerical features and there were some significant o
 * ``longitude`` - 1812 (This cannot be happen as longitude of that are lies between 33 - 39 approx.)
 * ``amount_tsh`` - 41639 (Static head of a pump cannot be 0 for such large number.)
 
-To impute those ``0`` values, I used several combinations of grouping techniques and imputaion techniquea(eg: mean,mode, median)
+To impute those ``0`` values, I used several combinations of grouping techniques and imputaion techniques(eg: mean,mode, median)
 
 ### Step 5 - Imputing null values
 
